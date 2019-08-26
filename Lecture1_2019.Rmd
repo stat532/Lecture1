@@ -1,0 +1,94 @@
+---
+title: "Lecture 1"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+```
+
+
+\subsection*{Yellowstone Experiment}
+Assume you were hired by the National Park Service to estimate the probability of tourists petting wild animals or walking on restricted areas. What do you believe is the true probability of tourists petting animals or walking on restricted areas? (sketch this out)
+\vfill
+
+\vfill
+\vfill
+\noindent Suppose, you are given results from eleven tourists, none of which of which test negative. Calculate the maximum likelihood estimator of $p$ the probability of tourists disobeying the rules.
+\vfill
+Let $y_i$ be 1 if test $i$ is positive and zero otherwise, then $y = \sum_i y_i$.
+\vfill
+\vfill
+\vfill
+
+\noindent Given that no "violators" were found in the testing, how does this estimator match up with your intuition?
+
+\vfill
+
+\newpage
+
+Likely close but not exactly the same. Furthermore consider the standard confidence interval for proportions (using CLT) is 
+\vfill
+There are variations on this calculation such as $\hat{p} =$
+
+\vfill
+\noindent
+Now we will talk about the mechanics of Bayesian statistics and revisit the Yellowstone example.
+
+- **Sampling Model:** 
+\vfill
+
+- **Likelihood Function:** 
+\vfill
+- **Prior Distribution:** 
+\vfill
+- **Posterior Distribution:** 
+\vfill
+\newpage
+
+In Bayesian statistics, inferences are made from the posterior distribution. In cases where analytical solutions are possible, the entire posterior distribution provides an informative description of the uncertainty present in the estimation. In other cases credible intervals are used to summarize the uncertainty in the estimation.  
+\vfill
+
+#### Experiment. Yellowstone Example  (with Bayes).
+Now reconsider the Yellowstone example from a Bayesian perspective. Use the Beta($\alpha,\beta$) as the prior distribution for $p$ and compute the posterior distribution for $p$.
+\vfill
+
+\vfill
+\vfill
+\vfill
+\newpage
+Now use a Beta(1,1) distribution as the prior for p($p$) and compute $p(p|y)$. Then $p(p|y) \sim Beta (1,12).$
+
+\vfill
+\noindent What is the expectation, or mean, or your posterior distribution? 
+\vfill
+
+\vfill
+\noindent How do these results compare with your intuition which we stated earlier?
+
+\noindent How about the MLE estimate?
+
+\noindent What impact did the prior distribution have on the posterior expectation?
+
+\newpage
+
+\subsection*{Classical, or frequentist, statistical paradigm:}
+\begin{itemize}
+	\item Estimate 
+	\vfill
+	\item Uncertainty 
+	\vfill
+	\item Inference
+	\vfill
+\end{itemize}
+
+\subsection*{Bayesian statistical paradigm}
+\begin{itemize}
+	\item Given 
+	\vfill
+	\item Uncertainty 
+	\vfill
+	\item For inference
+	\vfill
+\end{itemize}
